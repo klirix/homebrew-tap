@@ -13,6 +13,11 @@ class Albedo < Formula
   # Until you cut a tagged release, install from git:
   # head "https://github.com/klirix/albedo.git", branch: "main"
 
+  bottle do
+    rebuild 1
+    sha256 cellar: :any, arm64_sequoia: "88df6163eca82d383874fd75839b1b9b71f811b2c62488fcd0b8447c0a0fa0b0"
+  end
+
   depends_on "zig" => :build
 
   def install
