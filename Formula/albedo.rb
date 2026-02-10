@@ -8,7 +8,7 @@ class Albedo < Formula
   #
   # Recommended for stable releases:
   url "https://github.com/klirix/albedo/archive/refs/tags/v0.5.0.tar.gz"
-  sha256 "9635f9cde7bf9e05c92aac1ef469f0672edc2101"
+  sha256 "250f817fccb96e0d9b06fdb44984c0b95d7ba9b5e1cf08050ec54408300d0de5"
   #
   # Until you cut a tagged release, install from git:
   # head "https://github.com/klirix/albedo.git", branch: "main"
