@@ -19,6 +19,9 @@ class Albedo < Formula
     ENV["ZIG_GLOBAL_CACHE_DIR"] = buildpath/"zig-global-cache"
     ENV["ZIG_LOCAL_CACHE_DIR"] = buildpath/"zig-local-cache"
 
+    # Ensure the dylib has enough header space for install_name changes.
+    ENV.append "LDFLAGS", "-Wl,-headerpad_max_install_names"
+
     system "zig", "build", "--release=fast", "--prefix", prefix
     system "zig", "build", "--release=fast", "-Dstatic=true", "--prefix", prefix
 
