@@ -14,8 +14,9 @@ class Albedo < Formula
   # head "https://github.com/klirix/albedo.git", branch: "main"
 
   bottle do
-    rebuild 1
-    sha256 cellar: :any, arm64_sequoia: "88df6163eca82d383874fd75839b1b9b71f811b2c62488fcd0b8447c0a0fa0b0"
+    rebuild 2
+    root_url "https://github.com/klirix/homebrew-tap/releases/download/albedo-v0.5.0"
+    sha256 cellar: :any, arm64_sequoia: "9ac32f7454fc7e497df6efb614bbf126f68fd657d8c5232468c358d44ce5025d"
   end
 
   depends_on "zig" => :build
