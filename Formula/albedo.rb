@@ -19,19 +19,19 @@ class Albedo < Formula
     ENV["ZIG_GLOBAL_CACHE_DIR"] = buildpath/"zig-global-cache"
     ENV["ZIG_LOCAL_CACHE_DIR"] = buildpath/"zig-local-cache"
 
-    system "zig", "build", "-Doptimize=ReleaseFast", "--prefix", prefix
-    system "zig", "build", "-Doptimize=ReleaseFast", "-Dstatic=true", "--prefix", prefix
+    system "zig", "build", "--release=fast", "--prefix", prefix
+    system "zig", "build", "--release=fast", "-Dstatic=true", "--prefix", prefix
 
     include.install "include/albedo.h"
   end
 
   test do
-    assert_predicate include/"albedo.h", :exist?
+    assert_path_exists include/"albedo.h", :exist?
 
     if OS.mac?
-      assert_predicate lib/"libalbedo.dylib", :exist?
+      assert_path_exists lib/"libalbedo.dylib", :exist?
     else
-      assert_predicate lib/"libalbedo.so", :exist?
+      assert_path_exists lib/"libalbedo.so", :exist?
     end
   end
 end
