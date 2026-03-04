@@ -14,15 +14,15 @@ class Albedo < Formula
   # head "https://github.com/klirix/albedo.git", branch: "main"
 
   bottle do
-    rebuild 2
-    root_url "https://github.com/klirix/homebrew-tap/releases/download/albedo-v0.5.0"
-    sha256 cellar: :any, arm64_sequoia: "9ac32f7454fc7e497df6efb614bbf126f68fd657d8c5232468c358d44ce5025d"
+    rebuild 4
+    root_url "https://github.com/klirix/homebrew-tap/releases/download/v0.6.2"
+    sha256 cellar: :any, arm64_tahoe: "92b89f64192a4a2ed35bf7d97a3ee608610850d9f9aa92c6bced690338096eba"
   end
 
   bottle do
-    rebuild 3
-    root_url "https://github.com/klirix/homebrew-tap/releases/download/albedo-v0.5.0"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "3ca0aaf18e01d2c43ca78f4d17c6f0dc002af545cad3c060d8a27b309080b894"
+    rebuild 4
+    root_url "https://github.com/klirix/homebrew-tap/releases/download/v0.6.2"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "9d7fe613659e726589922f3b435a9be32482985cfe57a3630bc24d222be3d7af"
   end
 
   depends_on "zig" => :build
