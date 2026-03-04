@@ -7,8 +7,8 @@ class Albedo < Formula
   # `klirix/homebrew-tap` or `klirix/homebrew-albedo`).
   #
   # Recommended for stable releases:
-  url "https://github.com/klirix/albedo/archive/refs/tags/v0.5.0.tar.gz"
-  sha256 "250f817fccb96e0d9b06fdb44984c0b95d7ba9b5e1cf08050ec54408300d0de5"
+  url "https://github.com/klirix/albedo/archive/refs/tags/v0.6.2.tar.gz"
+  sha256 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   #
   # Until you cut a tagged release, install from git:
   # head "https://github.com/klirix/albedo.git", branch: "main"
